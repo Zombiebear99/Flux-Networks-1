@@ -159,7 +159,9 @@ dependencies {
     localRuntime("mezz.jei:jei-${"mod.minecraft"()}-neoforge:${"deps.jei"()}")
 
     // The One Probe
-    implementation("mcjty.theoneprobe:theoneprobe:${"deps.top"()}")
+//    implementation("mcjty.theoneprobe:theoneprobe:${"deps.top"()}")
+//    this version not found on maven repo
+    implementation ("curse.maven:the-one-probe-245211:5836106")
 
     // Curios
     compileOnly("top.theillusivec4.curios:curios-neoforge:${"deps.curios"()}")

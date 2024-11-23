@@ -1,0 +1,31 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:copy_components",
+              "include": [
+                "fluxnetworks:device_config",
+                "fluxnetworks:stored_energy"
+              ],
+              "source": "block_entity"
+            }
+          ],
+          "name": "fluxnetworks:flux_plug"
+        }
+      ],
+      "rolls": 1.0
+    }
+  ],
+  "random_sequence": "fluxnetworks:blocks/flux_plug"
+}
